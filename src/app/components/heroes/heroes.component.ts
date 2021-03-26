@@ -9,19 +9,19 @@ import { Hero } from '../../model/hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
+ /*  hero: Hero = {
     id: 1,
     name: 'Windstorm'
-  };
+  }; */
   public heroes: Hero[] = [];
-  public selectedHero?: Hero;
   
   constructor(private heroService: HeroService, private messageService: MessageService) {}
   
+/*   public selectedHero?: Hero;
   public onSelect(hero: Hero): void {
     this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
     this.selectedHero = hero;
-  } 
+  }  */
 
   /* getHeroes(): void {
     this.heroes = this.heroService.getHeroes();
